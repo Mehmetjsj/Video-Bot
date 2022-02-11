@@ -56,7 +56,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_photo("https://telegra.ph/file/84c3fa6685479f7e1a5a6.jpg")
     await message.reply_text(
-        f"""✨ **Merhaba{message.from_user.mention()} !**
+        f"""✨ **Merhaba{message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **botu sesli sohbetlerde canlı yayın video ve müzik akışını sağlar !**
 
 ❂ **Detaylı bilgi ve tüm komutlar için komutlar butonuna tıklayın !**
