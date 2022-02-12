@@ -80,7 +80,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "[► Grup Destek ◄]", url="https://t.me/GYCYolcu"
+                        "[► Grup Destek ◄]", url="https://t.me/botdestekk"
                     ),
                     InlineKeyboardButton(
                         "[► Kanal Destek ◄]", url="https://t.me/LegendDestek"
@@ -154,7 +154,7 @@ async def new_chat(c: Client, m: Message):
             return await m.reply(
                 "❤️ **Beni Gruba eklediğin için teşekkür ederim!**\n\n"
                 "**Asistanı çağırmak için /oynat komutunu kullanın veya el ile ekleyin.**\n\n"
-                "**daha sonra** /yenile",
+                "**sorun ve görüşleriniz için** @botdestekk",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
