@@ -64,18 +64,27 @@ async def start_(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("➕ Gruba ekle ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                    InlineKeyboardButton(
+                        "➕ Gruba ekle ➕",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    )
                 ],
                 [
-                    InlineKeyboardButton("❓ Basit komutlar", callback_data="cbhowtouse"),
+                    InlineKeyboardButton(
+                        "❓ Basit komutlar", callback_data="cbhowtouse"
+                    ),
                 ],
                 [
                     InlineKeyboardButton("📚 komutlar", callback_data="cbcmds"),
                     InlineKeyboardButton("Sahip", url="https://t.me/evetbenim38"),
                 ],
                 [
-                    InlineKeyboardButton("[► Grup Destek ◄]", url="https://t.me/GYCYolcu"),
-                    InlineKeyboardButton("[► Kanal Destek ◄]", url="https://t.me/LegendDestek"),
+                    InlineKeyboardButton(
+                        "[► Grup Destek ◄]", url="https://t.me/GYCYolcu"
+                    ),
+                    InlineKeyboardButton(
+                        "[► Kanal Destek ◄]", url="https://t.me/LegendDestek"
+                    ),
                 ],
                 [
                     InlineKeyboardButton("🌐 Sohbet Grubu", url="https://t.me/gycyolcu"),
