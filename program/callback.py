@@ -60,10 +60,10 @@ async def cbguides(_, query: CallbackQuery):
 1.) **başlangıç beni gruba ekle.**
 2.) **bana yetki verin aonim yetkisi vermeyin.**
 3.) **Ardından /reload komutu ile admin listesini yenileyin .**
-3.) **grubunuza @{ASSISTANT_NAME} ekleyin veya /katil komutuyla davet edin.**
+3.) **grubunuza @{ASSISTANT_NAME} ekleyin veya /oynat komutuyla davet edin.**
 4.) **botu başlatmadan önce sesli sohbeti açın .**
 5.) **Bazen /reload komutunu kullanarak botu daha sağlıklı bir hale getirebilirsiniz .**
-📌 **bot sesli sohbete katılmadıysa sesli sohbetin açık olup olmadığını kontrol edin veya /ayril yapıp tekrar /katil yapın .**
+📌 **bot sesli sohbete katılmadıysa sesli sohbetin açık olup olmadığını kontrol edin veya /ayril yapıp tekrar /oynat yapın .**
 💡 **çözüm ve önerileriniz için iletişime geçebilirsiniz : @{GROUP_SUPPORT}**
 ⚡ __keyifli dinlemeler 🙋‍♂️_""",
         reply_markup=InlineKeyboardMarkup(
