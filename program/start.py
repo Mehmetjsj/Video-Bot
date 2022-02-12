@@ -58,34 +58,29 @@ async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Merhaba {message.from_user.mention()} !**\n
 💭 [{BOT_NAME}](https://t.me/{BOT_USERNAME}) **botu sesli sohbetlerde canlı yayın video ve müzik akışını sağlar !**
-
 ❂ **Detaylı bilgi ve tüm komutlar için komutlar butonuna tıklayın !**
-
 ❂ **Botun temel komutları için temel komutlar butonuna tıklayın**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "➕ Gruba ekle ➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                    )
+                    InlineKeyboardButton("➕ Gruba ekle ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],
-                [InlineKeyboardButton("❓ Basit komutlar", callback_data="cbhowtouse")],
+                [
+                    InlineKeyboardButton("❓ Basit komutlar", callback_data="cbhowtouse"),
+                ],
                 [
                     InlineKeyboardButton("📚 komutlar", callback_data="cbcmds"),
-                    InlineKeyboardButton("Sahip", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("Sahip", url="https://t.me/evetbenim38"),
                 ],
                 [
-                    InlineKeyboardButton(
-                        "[► Grup Destek ◄]", url=f"https://t.me/{GROUP_SUPPORT}"
-                    ),
-                    InlineKeyboardButton(
-                        "[► Kanal Destek ◄]", url=f"https://t.me/{UPDATES_CHANNEL}"
-                    ),
+                    InlineKeyboardButton("[► Grup Destek ◄]", url="https://t.me/GYCYolcu"),
+                    InlineKeyboardButton("[► Kanal Destek ◄]", url="https://t.me/LegendDestek"),
                 ],
-                [InlineKeyboardButton("🌐 Sohbet Grubu", url="https://t.me/gycyolcu")],
-            ]
+                [
+                    InlineKeyboardButton("🌐 Sohbet Grubu", url="https://t.me/gycyolcu"),
+                ],
+            ],
         ),
         disable_web_page_preview=True,
     )
@@ -149,8 +144,8 @@ async def new_chat(c: Client, m: Message):
         if member.id == bot_id:
             return await m.reply(
                 "❤️ **Beni Gruba eklediğin için teşekkür ederim!**\n\n"
-                "**Asistanı çağırmak için /oynat komutunu kullanın veya el ile ekleyin.**\n\n"
-                "**sorun ve görüşleriniz için iletişime geçebilirsiniz** @botdestekk",
+                "**Asistanı çağırmak için /katil komutunu kullanın veya el ile ekleyin.**\n\n"
+                "**daha sonra** /yenile",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
