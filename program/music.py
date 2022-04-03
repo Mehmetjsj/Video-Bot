@@ -78,7 +78,7 @@ async def play(c: Client, m: Message):
         await m.reply_text("Gerekli izin eksik:" + "\n\n» ❌ __Kullanıcı ekle_")
         return
     try:
-        ubot = (await user.get_me()).id
+        (await user.get_me()).id
         b = await c.get_chat_member(chat_id, bot)
         if b.status == "kicked":
             await m.reply_text(
