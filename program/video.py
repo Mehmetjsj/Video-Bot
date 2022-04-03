@@ -2,13 +2,9 @@
 # Copy Paster yer yok kaybol
 # Kod bitiş tarihi 04.04.2022
 
-import re
 import asyncio
+import re
 
-from config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2
-from driver.filters import command, other_filters
-from driver.queues import QUEUE, add_to_queue
-from driver.jennie import call_py, user
 from pyrogram import Client
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -21,6 +17,11 @@ from pytgcalls.types.input_stream.quality import (
     MediumQualityVideo,
 )
 from youtubesearchpython import VideosSearch
+
+from config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2
+from driver.filters import command, other_filters
+from driver.jennie import call_py, user
+from driver.queues import QUEUE, add_to_queue
 
 
 def ytsearch(query: str):
@@ -63,12 +64,16 @@ async def vplay(c: Client, m: Message):
         [
             [
                 InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• Group", url=f"https://t.me/lisasupportchat"),
+                InlineKeyboardButton(
+                    text="• Group", url=f"https://t.me/lisasupportchat"
+                ),
             ]
         ]
     )
     if m.sender_chat:
-        return await m.reply_text("you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights.")
+        return await m.reply_text(
+            "you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights."
+        )
     try:
         aing = await c.get_me()
     except Exception as e:
@@ -109,9 +114,7 @@ async def vplay(c: Client, m: Message):
                 return
         else:
             try:
-                invitelink = await c.export_chat_invite_link(
-                    m.chat.id
-                )
+                invitelink = await c.export_chat_invite_link(m.chat.id)
                 if invitelink.startswith("https://t.me/+"):
                     invitelink = invitelink.replace(
                         "https://t.me/+", "https://t.me/joinchat/"
@@ -310,7 +313,9 @@ async def vstream(c: Client, m: Message):
         ]
     )
     if m.sender_chat:
-        return await m.reply_text("you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights.")
+        return await m.reply_text(
+            "you're an __Anonymous__ Admin !\n\n» revert back to user account from admin rights."
+        )
     try:
         aing = await c.get_me()
     except Exception as e:
@@ -351,9 +356,7 @@ async def vstream(c: Client, m: Message):
                 return
         else:
             try:
-                invitelink = await c.export_chat_invite_link(
-                    m.chat.id
-                )
+                invitelink = await c.export_chat_invite_link(m.chat.id)
                 if invitelink.startswith("https://t.me/+"):
                     invitelink = invitelink.replace(
                         "https://t.me/+", "https://t.me/joinchat/"
