@@ -51,7 +51,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(command(["voynat", f"vplay@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["voynat", f"vplay@{BOT_USERNAME}"]) & other_filters)  #developer SakirBey
 async def vplay(c: Client, m: Message):
     await m.delete()
     replied = m.reply_to_message
