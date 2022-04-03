@@ -38,7 +38,7 @@ async def ytdl(format: str, link: str):
     return 0, stderr
 
 
-@Client.on_message(command(["oynat", f"oynat@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["oynat", f"play@{BOT_USERNAME}"]) & other_filters) #Developer SakirBey
 async def play(c: Client, m: Message):
     await m.delete()
     replied = m.reply_to_message
