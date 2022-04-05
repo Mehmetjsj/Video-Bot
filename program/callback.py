@@ -103,7 +103,15 @@ async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
        f"""🏮 Basit komutlar listesi:
          
-     /oynat istediğiniz şarkıyı direk bulup oynatır \n» /voynat isteidğin videoyu direk bulup oynatır \n» /atla sıradaki şarkıya geçer \n» /video videoyu bulup indirir \n» /indir müziği bulup indirir \n» /devam duraklatığınız şarkıyı devam ettirir \n» /durdur akışı durdurur \n» /bitir akışı bitirip sesli sohbetten ayrılır \n» /canlı canlı yayın akışını sağlar \n\n
+» /oynat istediğiniz şarkıyı direk bulup oynatır
+» /voynat istediğiniz videoyu direk bulup oynatır
+» /atla sıradaki şarkıya geçer
+» /video videoyu bulup indirir
+» /devam duraklatığınız şarkıyı devam ettirir
+» /durdur akışı durdurur
+» /bitir akışı bitirip sesli sohbetten ayrılır
+» /canlı canlı yayın akışını sağlar
+» /reload admin listesini yeniler
     
     ⚡️ Daha fazla bilgi icin  @botsohbetdestek""",
      reply_markup=InlineKeyboardMarkup(
