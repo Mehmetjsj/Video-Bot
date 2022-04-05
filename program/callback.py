@@ -102,7 +102,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f""" Basit komutlar listesi:
+        f"""🏮 Basit komutlar listesi:
           
 » /oynat istediğiniz şarkıyı direk bulup oynatır
 » /voynat isteidğin videoyu direk bulup oynatır 
@@ -113,7 +113,8 @@ async def cbbasic(_, query: CallbackQuery):
 » /durdur akışı durdurur
 » /bitir akışı bitirip sesli sohbetten ayrılır 
 » /canlı canlı yayın akışını sağlar 
-⚡️ __Daha fazla bilgi için @botsohbetdestek__""",
+⚡️ __Daha fazla bilgi icin @botsohbetdestek__""",
+
         reply_markup=InlineKeyboardMarkup(
             [
                 [
