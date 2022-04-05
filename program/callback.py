@@ -112,7 +112,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /durdur akışı durdurur
 » /bitir akışı bitirip sesli sohbetten ayrılır 
 » /canlı canlı yayın akışını sağlar 
-⚡️ __Daha fazla bilgi için @botdestekk__""",
+⚡️ __Daha fazla bilgi için @botsohbetdestek__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
