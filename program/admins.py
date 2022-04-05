@@ -19,7 +19,7 @@ bttn = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Geri", callback_data="c
 bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Mkapat", callback_data="cls")]])
 
 
-@Client.on_message(command(["yenile", f"reload@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["reload", f"reload@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
 async def update_admin(client, message):
     global admins
@@ -29,7 +29,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ Bot **sorunsuz bir şekilde yenilendi !**\n✅ **Yönetici listesi** sorunsuz **Yenilendi  !**"
+        "✅ Bot **reloaded correctly !**\n✅ **Admin list** has **updated !**"
     )
 
 
