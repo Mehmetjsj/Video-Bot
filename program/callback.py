@@ -105,9 +105,8 @@ async def cbbasic(_, query: CallbackQuery):
          
     /oynat istediğiniz şarkıyı direk bulup oynatır \n» /voynat isteidğin videoyu direk bulup oynatır \n» /atla sıradaki şarkıya geçer \n» /video videoyu bulup indirir \n» /indir müziği bulup indirir \n» /devam duraklatığınız şarkıyı devam ettirir \n» /durdur akışı durdurur \n» /bitir akışı bitirip sesli sohbetten ayrılır \n» /canlı canlı yayın akışını sağlar \n\n⚡️ Daha fazla bilgi icin
     
-      @botsohbetdestek""",
-
-        reply_markup=InlineKeyboardMarkup(
+     @botsohbetdestek""",
+     reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("🔙 Geri Git", callback_data="cbcmds"),
