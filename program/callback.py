@@ -102,7 +102,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the basic commands:
+        f"""🏮 basit komutkar listesi:
          
 » /oynat istediğiniz şarkıyı direk bulup oynatır
 » /voynat istediğiniz videoyu direk bulup oynatır
