@@ -135,7 +135,7 @@ async def cbadmin(_, query: CallbackQuery):
 » /ac - asistanın sesini açar 
 » /canlı canlı yayın akışını sağlar
 
-⚡️ __Daha fazla bilgi için @botdestekk__""",
+⚡️ __Daha fazla bilgi için @botsohbetdestek__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
