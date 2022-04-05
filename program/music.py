@@ -49,7 +49,7 @@ async def play(c: Client, m: Message):
         [
             [
                 InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data="cbmenu"),
-                InlineKeyboardButton(text="• Grup", url=f"https://t.me/botdestekk"),
+                InlineKeyboardButton(text="• Grup", url=f"https://t.me/botsohbetdestek"),
             ]
         ]
     )
