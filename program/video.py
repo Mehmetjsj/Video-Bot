@@ -155,7 +155,7 @@ async def vplay(c: Client, m: Message):
                 requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
                 await m.reply_photo(
                     photo=f"{IMG_1}",
-                    caption=f"💡 **Parça sıraya eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({link}) | `video`\n💭 **Sohbet:** `{chat_id}`\n🎧 **Request by:** {requester}",
+                    caption=f"💡 **Parça sıraya eklendi »** `{pos}`\n\n🏷 **İsim:** [{songname}]({link}) | `video`\n💭 **Sohbet:** `{chat_id}`\n🎧 **talep eden:** {requester}",
                     reply_markup=keyboard,
                 )
             else:
@@ -366,7 +366,7 @@ async def vstream(c: Client, m: Message):
                 )
 
     if len(m.command) < 2:
-        await m.reply("» give me a live-link/m3u8 url/youtube link to stream.")
+        await m.reply("» canlı yayını başlatmam için bana bir akış linki verin.")
     else:
         if len(m.command) == 2:
             link = m.text.split(None, 1)[1]
