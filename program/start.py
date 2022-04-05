@@ -154,7 +154,7 @@ async def new_chat(c: Client, m: Message):
             return await m.reply(
                 "❤️ **Beni Gruba eklediğin için teşekkür ederim!**\n\n"
                 "**Asistanı çağırmak için /oynat komutunu kullanın veya el ile ekleyin.**\n\n"
-                "**sorun ve görüşleriniz için** @botdestekk",
+                "**sorun ve görüşleriniz için** @botsohbetdestek",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
