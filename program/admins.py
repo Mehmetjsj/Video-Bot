@@ -27,7 +27,7 @@ async def update_admin(client, message):
     new_ads = await client.get_chat_members(message.chat.id, filter="administrators")
     for u in new_ads:
         new_admins.append(u.user.id)
-    [message.chat.id] = new_admins
+    [message.chat.id] = 
     await message.reply_text(
         "✅ Bot **reloaded correctly !**\n✅ **Admin list** has **updated !**"
     )
