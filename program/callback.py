@@ -114,7 +114,7 @@ async def cbbasic(_, query: CallbackQuery):
 » /canlı canlı yayın akışını sağlar
     
     ⚡️ Daha fazla bilgi icin  @botsohbetdestek""",
-     reply_markup=InlineKeyboardMarkup(
+        reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("🔙 Geri Git", callback_data="cbcmds"),
