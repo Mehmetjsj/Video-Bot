@@ -11,7 +11,7 @@ from driver.jennie import user
 
 
 @Client.on_message(
-    command(["katıl", f"katıl@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot
+    command(["katıl", f"userbotjoin@{BOT_USERNAME}"]) & ~filters.private & ~filters.bot
 )
 @authorized_users_only
 async def join_chat(c: Client, m: Message):
