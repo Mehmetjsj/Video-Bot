@@ -81,7 +81,7 @@ async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Merhaba [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 » **aşağıdaki butonları kullanarak mevcut komutları görebilirsiniz !**
-⚡ __Daha fazla bilgi için @botsohbetdestek__"",
+⚡ __Daha fazla bilgi için @botsohbetdestek__""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
