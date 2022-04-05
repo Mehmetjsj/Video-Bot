@@ -98,6 +98,7 @@ async def cbcmds(_, query: CallbackQuery):
         ),
     )
 
+
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
