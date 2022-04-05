@@ -90,9 +90,7 @@ async def vplay(c: Client, m: Message):
         )
         return
     if not a.can_delete_messages:
-        await m.reply_text(
-            "gerekli izin eksik:" + "\n\n» ❌ __Mesajları sil__"
-        )
+        await m.reply_text("gerekli izin eksik:" + "\n\n» ❌ __Mesajları sil__")
         return
     if not a.can_invite_users:
         await m.reply_text("gerekli izin eksik:" + "\n\n» ❌ __Kullanıcı ekle__")
@@ -332,9 +330,7 @@ async def vstream(c: Client, m: Message):
         )
         return
     if not a.can_delete_messages:
-        await m.reply_text(
-            "gerekli izin eksik:" + "\n\n» ❌ __Mesajları sil__"
-        )
+        await m.reply_text("gerekli izin eksik:" + "\n\n» ❌ __Mesajları sil__")
         return
     if not a.can_invite_users:
         await m.reply_text("gerekli izin eksik:" + "\n\n» ❌ __Kullanıcı ekle__")
