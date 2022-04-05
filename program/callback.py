@@ -81,7 +81,7 @@ async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Merhaba [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 » **aşağıdaki butonları kullanarak mevcut komutları görebilirsiniz !**
-⚡ __Daha fazla bilgi için @botdestekk__""",
+⚡ __Daha fazla bilgi için @botsohbetdestek__"",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -150,7 +150,7 @@ async def cbadmin(_, query: CallbackQuery):
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🏮 geliştirci komutları:
-» bu komutlar sadece geliştirciye aittir bilgi ve destek @legenddestek
+» bu komutlar sadece geliştirciye aittir bilgi ve destek @botsohbetdestek
 ⚡ __keyifli dinlemeler 🙋‍♂️__""",
         reply_markup=InlineKeyboardMarkup(
             [
