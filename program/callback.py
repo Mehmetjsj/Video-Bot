@@ -103,6 +103,7 @@ async def cbcmds(_, query: CallbackQuery):
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""🏮 Basit komutlar listesi:
+          
 » /oynat istediğiniz şarkıyı direk bulup oynatır
 » /voynat isteidğin videoyu direk bulup oynatır 
 » /atla sıradaki şarkıya geçer
