@@ -19,7 +19,7 @@ bttn = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Geri", callback_data="c
 bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Mkapat", callback_data="cls")]])
 
 
-@Client.on_message(command(["reload", f"reload@{BOT_USERNAME}"]) & other_filters)
+@Client.on_message(command(["yenile", f"reload@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
 async def update_admin(client, message):
     global admins
