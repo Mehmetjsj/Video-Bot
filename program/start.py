@@ -80,10 +80,10 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "[► Grup Destek ◄]", url="https://t.me/botdestekk"
+                        "[► Grup Destek ◄]", url="https://t.me/botsohbetdestek"
                     ),
                     InlineKeyboardButton(
-                        "[► Kanal Destek ◄]", url="https://t.me/LegendDestek"
+                        "[► Kanal Destek ◄]", url="https://t.me/sohbetbotdestek"
                     ),
                 ],
                 [
