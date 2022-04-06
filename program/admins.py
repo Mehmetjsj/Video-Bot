@@ -16,12 +16,14 @@ from driver.utils import skip_current_song, skip_item
 bttn = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Geri", callback_data="cbmenu")]])
 
 
-bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Mkapat", callback_data="cls")]])
+bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Mkapat", callback_data="cls")]]
+)
 
 
 @Client.on_message(command(["reload", f"reload@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
-async def update_admin(client, message):
+@check_blacklist()
+async def update_admin(client, message: Message):
     global admins
     new_admins = []
     new_ads = await client.get_chat_members(message.chat.id, filter="administrators")
@@ -29,7 +31,7 @@ async def update_admin(client, message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ Bot **reloaded correctly !**\n✅ **Admin list** has **updated !**"
+        "✅ Bot **reloaded** correctly!\n✅ The **Admin list** has **updated.**"
     )
 
 
