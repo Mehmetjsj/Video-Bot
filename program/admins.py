@@ -28,10 +28,8 @@ async def update_admin(client, message):
     for u in new_ads:
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
-    await message.reply_text(
-        "✅ Bot reloaded correctly!\n✅ The Admin list has updated."
-    ) 
-    
+    await message.reply_text("✅ Bot reloaded correctly!\n✅ The Admin list has updated.")
+
 
 @Client.on_message(command(["atla", f"atla@{BOT_USERNAME}", "vatla"]) & other_filters)
 @authorized_users_only
