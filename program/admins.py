@@ -16,8 +16,7 @@ from driver.utils import skip_current_song, skip_item
 bttn = InlineKeyboardMarkup([[InlineKeyboardButton("🔙 Geri", callback_data="cbmenu")]])
 
 
-bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Mkapat", callback_data="cls")]]
-)
+bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Mkapat", callback_data="cls")]])
 
 
 @Client.on_message(command(["reload", f"reload@{BOT_USERNAME}"]) & other_filters)
