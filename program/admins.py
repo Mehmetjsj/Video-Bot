@@ -21,8 +21,7 @@ bcl = InlineKeyboardMarkup([[InlineKeyboardButton("🗑 Mkapat", callback_data="
 
 @Client.on_message(command(["reload", f"reload@{BOT_USERNAME}"]) & other_filters)
 @authorized_users_only
-@check_blacklist()
-async def update_admin(client, message: Message):
+async def update_admin(client, message):
     global admins
     new_admins = []
     new_ads = await client.get_chat_members(message.chat.id, filter="administrators")
@@ -30,7 +29,7 @@ async def update_admin(client, message: Message):
         new_admins.append(u.user.id)
     admins[message.chat.id] = new_admins
     await message.reply_text(
-        "✅ Bot **reloaded** correctly!\n✅ The **Admin list** has **updated.**"
+        "✅ Bot **reloaded correctly !**\n✅ **Admin list** has **updated !**"
     )
 
 
