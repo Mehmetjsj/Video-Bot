@@ -7,7 +7,6 @@ from pyrogram.types import (
 )
 
 from config import BOT_USERNAME, IMG_3
-from driver.queues import queues
 from driver.decorators import authorized_users_only
 from driver.filters import command, other_filters
 from driver.jennie import call_py
