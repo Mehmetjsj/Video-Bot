@@ -1,7 +1,8 @@
-from pyrogram import filters
 from typing import List, Union
-from config import COMMAND_PREFIXES
 
+from pyrogram import filters
+
+from config import COMMAND_PREFIXES
 
 other_filters = filters.group & ~filters.edited & ~filters.via_bot & ~filters.forwarded
 other_filters2 = (
